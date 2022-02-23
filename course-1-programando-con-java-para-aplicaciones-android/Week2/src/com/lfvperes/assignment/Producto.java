@@ -2,7 +2,7 @@ package com.lfvperes.assignment;
 
 public class Producto implements Visualizable {
     
-    private String titulo;
+    private String titulo = "";
     private boolean visto = false;
     private double duracion = 0;
     private String creador;
@@ -51,7 +51,7 @@ public class Producto implements Visualizable {
     @Override
     public String toString() {
         return "Producto [creador=" + creador + ", duracion=" + duracion + ", genero=" + genero + ", titulo=" + titulo
-                + ", visto=" + visto + "]";
+                + ", visto=" + visto;
     }
 
     @Override
@@ -66,7 +66,7 @@ public class Producto implements Visualizable {
 
     @Override
     public double tiempoVisto() {
-        return Visualizable.tiempoVistoTotal;
+        return Math.random() * this.duracion;
     }
     
 }

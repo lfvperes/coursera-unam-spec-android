@@ -23,5 +23,10 @@ public class Pelicula extends Producto {
 
     public void setAno(int ano) {
         this.ano = ano;
-    }    
+    }
+
+    @Override
+    public String toString() {
+        return "Pelicula: " + super.toString() + ", ano=" + ano + "]";
+    }
 }

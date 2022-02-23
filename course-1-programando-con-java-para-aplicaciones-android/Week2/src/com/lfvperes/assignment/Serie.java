@@ -23,4 +23,9 @@ public class Serie extends Producto {
     public void setNroTemporadas(int nroTemporadas) {
         this.nroTemporadas = nroTemporadas;
     }
+
+    @Override
+    public String toString() {
+        return "Serie: " + super.toString() + ", nroTemporadas=" + nroTemporadas + "]";
+    }
 }
